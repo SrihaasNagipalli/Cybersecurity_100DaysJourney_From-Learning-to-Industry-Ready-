@@ -1,0 +1,232 @@
+# 🔐 Day 02 — Computer Networks & IP Addresses
+
+Part of my **100 Days of Cybersecurity** learning journey.
+
+## 📚 Topics Covered
+
+- Introduction to Computer Networks
+- Types of Computer Networks
+- Network Devices
+- IP Addresses
+- IPv4
+- IPv6
+- Public and Private IP
+- Static and Dynamic IP
+- Loopback Address
+- IPv4 Structure
+- Subnet Masks
+- Network ID and Host ID
+- Basic Subnetting
+- Device-to-Device Communication
+- Basic Networking Commands
+
+---
+
+## 🌐 1. What is a Computer Network?
+
+A computer network is a collection of interconnected devices that communicate with each other and share resources.
+
+Examples of resources include:
+
+- Files
+- Applications
+- Printers
+- Internet connectivity
+- Databases
+- Network services
+
+### Basic Architecture
+
+Internet
+↓
+Router
+↓
+Switch
+↓
+PC / Laptop / Server / Printer / Mobile
+
+---
+
+## 🌍 2. Types of Computer Networks
+
+### PAN — Personal Area Network
+
+A small network around an individual.
+
+Example:
+- Bluetooth
+- Mobile hotspot
+
+### LAN — Local Area Network
+
+A network covering a small geographical area.
+
+Example:
+- Home network
+- Office network
+- School network
+
+### MAN — Metropolitan Area Network
+
+Covers a city or large campus.
+
+### WAN — Wide Area Network
+
+Covers large geographical areas.
+
+Example:
+- The Internet
+
+### WLAN — Wireless LAN
+
+A LAN that uses wireless communication such as Wi-Fi.
+
+### CAN — Campus Area Network
+
+Connects multiple buildings within a campus.
+
+### SAN — Storage Area Network
+
+A high-speed network designed for storage devices and servers.
+
+### VPN — Virtual Private Network
+
+Creates a secure connection over an existing network.
+
+---
+
+## 🔢 3. IP Addresses
+
+An IP address is a network-layer address used to identify a device/interface and enable communication across IP networks.
+
+Two major versions are:
+
+- IPv4
+- IPv6
+
+---
+
+## IPv4
+
+IPv4 uses **32 bits**.
+
+Example:
+
+`192.168.1.10`
+
+It contains four octets:
+
+`192 . 168 . 1 . 10`
+
+Each octet contains 8 bits.
+
+Total:
+
+`8 + 8 + 8 + 8 = 32 bits`
+
+---
+
+## IPv6
+
+IPv6 uses **128 bits**.
+
+Example:
+
+`2001:db8::1`
+
+IPv6 provides a vastly larger address space than IPv4.
+
+---
+
+## 🔐 4. Public vs Private IP
+
+### Public IP
+
+An address used for communication across the public Internet.
+
+### Private IP
+
+Used within private/local networks.
+
+Common private IPv4 ranges include:
+
+- `10.0.0.0/8`
+- `172.16.0.0/12`
+- `192.168.0.0/16`
+
+---
+
+## 🔄 5. Static vs Dynamic IP
+
+### Static IP
+
+An IP address configured to remain consistent.
+
+### Dynamic IP
+
+An IP address assigned automatically, commonly using DHCP.
+
+---
+
+## 🔁 6. Loopback Address
+
+The IPv4 loopback address is:
+
+`127.0.0.1`
+
+It refers back to the local host.
+
+---
+
+## 🧩 7. IPv4 Structure
+
+Example:
+
+`192.168.1.10`
+
+Subnet mask:
+
+`255.255.255.0`
+
+The subnet mask helps determine which portion represents the network and which portion represents hosts.
+
+---
+
+## 🌐 8. How Devices Communicate
+
+A simplified Internet communication flow:
+
+```text
+Your Device
+     ↓
+   Router
+     ↓
+    ISP
+     ↓
+  Internet
+     ↓
+Destination Server
+     ↓
+   Response
+
+
+🧪 9. Hands-on Practice
+Check IP Configuration
+Windows:ipconfig
+Linux:ip addr
+
+Test Connectivity
+ping google.com
+
+Check DNS Resolution
+nslookup google.com
+
+Trace Network Path
+Windows:tracert google.com
+Linux/macOS:traceroute google.com
+
+Practice these commands only on systems and networks you are authorized to inspect.
+
+Key Takeaway
+Understanding networking is essential to understanding cybersecurity.
+Before learning advanced penetration testing, I want to build a strong understanding of how devices communicate, how IP addressing works, and how data travels across networks.
